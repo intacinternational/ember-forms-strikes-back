@@ -1,10 +1,10 @@
 
 ```
                   __                    ____                         
-  ___  ____ ___  / /_  ___  _____      / __/___  _________ ___  _____
- / _ \/ __ `__ \/ __ \/ _ \/ ___/_____/ /_/ __ \/ ___/ __ `__ \/ ___/
-/  __/ / / / / / /_/ /  __/ /  /_____/ __/ /_/ / /  / / / / / (__  ) 
-\___/_/ /_/ /_/_.___/\___/_/        /_/  \____/_/  /_/ /_/ /_/____/  
+  ___  ____ ___  / /_  ___  _____      / __/___  _________ ___  _____      _______
+ / _ \/ __ `__ \/ __ \/ _ \/ ___/_____/ /_/ __ \/ ___/ __ `__ \/ ___/_____/__   /
+/  __/ / / / / / /_/ /  __/ /  /_____/ __/ /_/ / /  / / / / / (__  )|_____|  / /___
+\___/_/ /_/ /_/_.___/\___/_/        /_/  \____/_/  /_/ /_/ /_/____/         /_____/
                                                                      
 ```
 
@@ -17,7 +17,7 @@ Smart, Intuitive forms for Ember.js styled with Bootstrap &amp; Validation ready
 With Ember-CLI:
 
 ```
-npm install --save-dev ember-idx-forms
+npm install --save-dev ember-forms-strikes-back
 ```
 
 Please visit the documentation for installation & usage documentations: http://indexiatech.github.io/ember-forms

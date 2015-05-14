@@ -1,13 +1,7 @@
 {{#if controlWrapper}}
     <div {{bind-attr class=controlWrapper}}>
-        {{#if iconClass}}
-          <span class="input-group-addon"><i {{bind-attr class=iconClass}}></i></span>
-        {{/if}}
-        {{view controlView viewName=controlViewName property=propertyName id=cid}}
+        {{#if iconClass}}<span class="input-group-addon"><i {{bind-attr class=iconClass}}></i></span>{{/if}}{{view controlView viewName=controlViewName property=propertyName id=cid}}
     </div>
 {{else}}
-    {{#if iconClass}}
-      <span class="input-group-addon"><i {{bind-attr class=iconClass}}></i></span>
-    {{/if}}
-    {{view controlView viewName=controlViewName property=propertyName id=cid}}
+    {{#if iconClass}}<span class="input-group-addon"><i {{bind-attr class=iconClass}}></i></span>{{/if}}{{view controlView viewName=controlViewName property=propertyName id=cid}}
 {{/if}}

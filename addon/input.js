@@ -17,7 +17,9 @@ export default FormGroupComponent.extend({
     disabled: Em.computed.alias('parentView.disabled'),
     type: Em.computed.alias('parentView.type'),
     model: Em.computed.alias('parentView.model'),
-    name: Em.computed.alias('parentView.elemName'),
+    name: Ember.computed('parentView.propertyName', 'parentView.elemName', function() {
+      return this.get('parentView.elemName') || this.get('parentView.propertyName');
+    }),
     propertyName: Em.computed.alias('parentView.propertyName')
   }),
   property: void 0,

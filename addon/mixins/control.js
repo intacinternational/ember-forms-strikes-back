@@ -4,7 +4,7 @@ import Em from 'ember';
 Mixin that should be applied for all controls
  */
 export default Em.Mixin.create({
-  classNameBindings: ['class'],
+  classNameBindings: ['class', 'additionalClasses'],
   "class": 'form-control',
   init: function() {
     this._super();
@@ -24,7 +24,7 @@ export default Em.Mixin.create({
   name: Ember.computed('parentView.propertyName', 'parentView.elemName', function() {
     return this.get('parentView.elemName') || this.get('parentView.propertyName');
   }),
-  classNames: Ember.computed('parentView.classNames', function() {
-    return this.get('parentView.classNames');
+  additionalClasses: Ember.computed('parentView.additionalClasses', function() {
+    return this.get('parentView.additionalClasses');
   })
 });

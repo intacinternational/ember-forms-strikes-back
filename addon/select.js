@@ -11,9 +11,9 @@ Syntax:
     optionValuePath=keyForValue
     optionLabelPath=keyForLabel
     prompt="Optional default prompt"}}
-    
+
     //Optional params
-    @param propertyIsModel - (boolean) forces the selected object to be assigned to the property instead of the optionValuePath 
+    @param propertyIsModel - (boolean) forces the selected object to be assigned to the property instead of the optionValuePath
  */
 export default FormGroupComponent.extend({
   v_icons: false,

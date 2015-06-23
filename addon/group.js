@@ -35,6 +35,9 @@ export default Em.Component.extend(InFormMixin, HasPropertyMixin, HasPropertyVal
   canShowErrorsObserver: Em.observer('form', 'form.model', function() {
     this.set('canShowErrors', false);
   }),
+  // Additional properties for setting name and more classes to embedded view components
+  elemName: void 0,
+  classNames: void 0,
   hasSuccess: Em.computed('status', 'canShowErrors', function() {
     var success;
     success = this.get('validations') && this.get('status') === 'success' && this.get('canShowErrors');

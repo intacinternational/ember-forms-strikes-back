@@ -24,9 +24,11 @@ export default FormGroupComponent.extend({
     optionValuePath: Em.computed.alias('parentView.optionValuePath'),
     optionLabelPath: Em.computed.alias('parentView.optionLabelPath'),
     prompt: Em.computed.alias('parentView.prompt'),
+    disabled: Em.computed.alias('parentView.disabled'),
     multiple: Em.computed.alias('parentView.multiple')
   }),
   propertyIsModel:false,
+  disabled: void 0,
   property: void 0,
   content: void 0,
   optionValuePath: void 0,
